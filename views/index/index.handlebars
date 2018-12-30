@@ -1,0 +1,22 @@
+<div class="row center">
+  <div class="col s12 s10">
+    <h1>Welcome </h1>
+    <h4>Your Articles</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12 m10 l6 offset-l3 offset-m1">
+    <ul class="collection">
+      {{#each articles}}
+      <li class="collection-item avatar center-align">
+        <i class="material-icons circle">folder</i>
+        <p class="title">
+          {{title}}
+        </p>
+        <p>By: {{author}}</p>
+        <a href="/article/{{id}}" class="secondary-content"><i class="material-icons">send</i></a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
